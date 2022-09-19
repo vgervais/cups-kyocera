@@ -1,5 +1,4 @@
-# put the folders filter & kyocera in the directory you want to work.
-# filters contains the filters and kyocera contains the ppd's
+# put the file kyodialog_5.0-0_amd64.deb in the same folder as your Dockerfile
 FROM ydkn/cups
-COPY filter /usr/share/filter
-COPY kyocera /usr/share/ppd/kyocera
+COPY kyodialog_5.0-0_amd64.deb ./tmp
+RUN apt-get update && dpkg -i kyodialog_5.0-0_amd64.deb && apt-get install -f
