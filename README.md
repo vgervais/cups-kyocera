@@ -9,7 +9,7 @@ After the image is built, run the following to start the container
 
 ```docker run -d --restart always -p 631:631 --name kyocera-cups -v $(pwd):/etc/cups kyocera-cups```
 
-To gain access to the Administration > Add Printer function, you will need the username & password. On a normal local install, this would be the user. Under a (this) Docker install, you will need to change the root password. To do this, follow these steps:
+To gain access to the Administration > Add Printer function, you will need the username & password. You will need to change the root password. To do this, follow these steps:
 
 Obtain the container ID by typing ```docker ps``` This will show all containers running.
 
