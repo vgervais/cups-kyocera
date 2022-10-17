@@ -14,5 +14,7 @@ To gain access to the Administration > Add Printer function, you will need the u
 Create / change the root password of the container with the command ```docker exec -it kyocera-cups passwd```
 
 You can then access the UI from the IP address of the host with port 631 (eg: https://192.168.1.1:631) - Note use https to enable access to the Add Printer function mentioned above.
+
 Username will be: root
+
 Password will be the password you created above.
